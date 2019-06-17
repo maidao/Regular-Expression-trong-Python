@@ -1,0 +1,44 @@
+Ngoại trừ các ký tự điều khiển, (+ ? . * ^ $ ( ) [ ] { } | \),
+thì tất cả ký tự còn lại sẽ kết nối với chính chúng.
+Bạn có thể tránh một ký tự điều khiển bằng cách đặt trước nó một dấu \.
+
+Dưới đây là danh sách các pattern có sẵn trong Python:
+
+Pattern	            Miêu tả
+^	    Dưới đây là danh sách các pattern có sẵn trong Python:
+$	    Kết nối với phần cuối của dòng
+.	    Kết nối bất kỳ ký tự đơn nào ngoại trừ newline (dòng mới). Sử dụng tùy chọn m cho phép nó kết nối với newline (dòng mới)
+[...]	Kết nối với bất kỳ ký tự đơn nào trong []
+[^...]	Kết nối với bất kỳ ký tự đơn nào không ở trong []
+re*	Kết nối với 0 hoặc nhiều sự xuất hiện của biểu thức đặt trước
+re+	Kết nối với 1 hoặc nhiều sự xuất hiện của biểu thức đặt trước
+re?	Kết nối với 0 hoặc 1 sự xuất hiện của biểu thức đặt trước
+re{ n}	Kết nối với n sự xuất hiện của biểu thức đặt trước
+re{ n,}	Kết nối với n hoặc nhiều hơn sự xuất hiện của biểu thức đặt trước
+re{ n, m}	Kết nối với ít nhất n và nhiều nhất m sự xuất hiện của biểu thức đặt trước
+a| b	Kết nối với a hoặc b
+(re)	Nhóm các Regular Expression và ghi nhớ text đã kết nối
+(?imx)	Bật toggle tạm tời các tùy chọn i, m hoặc x bên trong một Regular Expression. Nếu trong cặp dấu ngoặc đơn thì chỉ khu vực đó bị ảnh hưởng
+(?-imx)	Tắt toggle tạm tời các tùy chọn i, m hoặc x bên trong một Regular Expression. Nếu trong cặp dấu ngoặc đơn thì chỉ khu vực đó bị ảnh hưởng
+(?: re)	Nhóm các Regular Expression mà không ghi nhớ text đã kết nối
+(?imx: re)	Bật toggle tạm thời các tùy chọn i, m, hoặc x bên trong cặp dấu ngoặc đơn
+(?-imx: re)	Tắt toggle tạm thời các tùy chọn i, m, hoặc x bên trong cặp dấu ngoặc đơn
+(?#...)	Comment
+(?= re)	Xác định vị trí bởi sử dụng một pattern. Không có một dãy giá trị
+(?! re)	Xác định vị trí bởi sử dụng sự phủ định pattern. Không có một dãy giá trị
+(?> re)	Kết nối pattern độc lập mà không backtrack
+\w	Kết nối các ký tự từ
+\W	Kết nối các ký tự không phải là từ
+\s	Kết nối với whitespace. Tương đương với [\t\n\r\f]
+\S	Kết nối với các ký tự không là whitespace
+\d	Kết nối với các chữ số. Tương đương với [0-9]
+\D	Kết nối với các ký tự không là chữ số
+\A	Kết nối với phần đầu của chuỗi
+\Z	Kết nối với phần cuối của chuỗi. Nếu một newline (dòng mới) tồn tại, nó kết nối với phần ở trước newline (dòng mới)
+\z	Kết nối với phần cuối của chuỗi
+\G	Kết nối với điểm mà tại đó kết nối cuối cùng được tìm thấy
+\b	Kết nối với các giới hạn từ khi bên ngoài các dấu []. Kết nối với backspace (mã là 0x08) khi bên trong các dấu []
+\B	Kết nối với các giới hạn không phải là từ
+\n, \t, etc.	Kết nối với newline (dòng mới), carriage return, tab, ...
+\1...\9	Kết nối với biểu thức con được nhóm thứ n
+\10	Kết nối biểu thức con được nhóm thứ n nếu nó đã kết nối. Nếu không, tham chiếu tới biểu diễn bát phân của một mã ký tự

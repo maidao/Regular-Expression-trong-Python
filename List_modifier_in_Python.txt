@@ -1,0 +1,10 @@
+Các modifier được liệt kê dưới đây có thể được sử dụng như là các flag tùy ý
+cho các hàm match và search. Bạn có thể cung cấp nhiều modifier bởi sử dụng toán tử |.
+
+Modifier	Miêu tả
+re.I	Thực hiện việc kết nối hoặc so khớp không phân biệt kiểu chữ
+re.L	Thông dịch các từ theo Locale hiện tại
+re.M	Làm cho $ kết nối với phần cuối của một dòng (mà không chỉ kết nối phần cuối của chuỗi) và làm cho ^ kết nối với phần đầu của bất cứ dòng nào (mà không chỉ kết nối phần đầu của chuỗi)
+re.S	Làm cho dot (dấu chấm) kết nối với bất kỳ ký tự nào, bao gồm một newline (dòng mới)
+re.U	Thông dịch các chữ cái theo bộ ký tự Unicode. Flag này ảnh hưởng tới hành vi của \w, \W, \b, \B
+re.X	Cho phép cú pháp "cuter" regular expression. Nó bỏ qua các khoảng trống trắng whitespace (ngoại trừ bên trong một [] hoặc khi được tránh bởi \) và coi # dưới dạng một comment

@@ -1,0 +1,11 @@
+Ví dụ	              Miêu tả
+
+[Pp]ython 	Kết nối với "Python" hoặc "python"
+rub[ye]	    Kết nối với "ruby" hoặc "rube"
+[aeiou]	    Kết nối với bất kỳ một nguyên âm nào
+[0-9]	    Kết nối với bất kỳ chữ số nào, giống dạng [0123456789]
+[a-z]	    Kết nối với bất kỳ chữ cái thường ASCII nào
+[A-Z]	    Kết nối với bất kỳ chữ cái hoa ASCII nào
+[a-zA-Z0-9]	Kết nối với bất kỳ cái nào ở trên
+[^aeiou]	Kết nối với bất kỳ cái nào ở trên ngoại trừ nguyên âm
+[^0-9]	    Kết nối với bất kỳ cái nào ở trên ngoại trừ một chữ số
